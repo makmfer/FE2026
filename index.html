@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gala & Glamour | Vestidos de Fiesta</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+    <header>
+    <div class="logo">
+        <h1>Gala & Glamour</h1>
+    </div>
+    <nav>
+        <ul class="menu-navegacion">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Vestidos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Encuentra el vestido de tus sueños</h2>
+            <p>Colecciones exclusivas para noches inolvidables.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestra Colección</h2>
+            <div class="contenedor-vestidos">
+                <article class="card">
+            <img src="img/vestido_kampala.jpg" alt="Vestido kampala">
+            <div class="card-info">
+                <h3>Vestido terracota Kampala</h3>
+                <p>Ideal para eventos de gala nocturnos.</p>
+                <span class="precio">$150.000</span>
+                <button>Ver detalles</button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/vestido_holter.jpg" alt="Vestido vestido_holter">
+            <div class="card-info">
+                <h3>Holter for Night</h3>
+                <p>Elegancia y frescura en una sola pieza.</p>
+                <span class="precio">$120.500</span>
+                <button>Ver detalles</button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/falda_petra.jpg" alt="Vestido negro elegante">
+            <div class="card-info">
+                <h3>Classic Black</h3>
+                <p>El clásico que nunca falla para cualquier fiesta.</p>
+                <span class="precio">$180.000</span>
+                <button>Ver detalles</button>
+            </div>
+        </article>
+                </div>
+        </section>
+
+        <section id="resenas">
+    <h2>Lo que dicen nuestras clientas</h2>
+    <div class="contenedor-grid-resenas">
+        
+        <article class="resena-card">
+            <p>"El vestido rojo fue la sensación de la fiesta. ¡Calidad increíble!"</p>
+            <h4>- Mariana R.</h4>
+        </article>
+
+        <article class="resena-card destaque">
+            <p>"Buscaba algo elegante para mi graduación y encontré el diseño perfecto. La atención fue personalizada y muy amable."</p>
+            <h4>- Lucía G.</h4>
+        </article>
+
+        <article class="resena-card">
+            <p>"Excelente servicio y los talles son reales. Lo recomiendo mucho."</p>
+            <h4>- Sofía M.</h4>
+        </article>
+
+        <article class="resena-card">
+            <p>"Compré mi vestido online y llegó impecable en 2 días. ¡Gracias!"</p>
+            <h4>- Valentina P.</h4>
+        </article>
+
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas sobre un diseño o talle? Escríbenos.</p>
     
+    <form action="https://formspree.io/f/xqenyylr" method="POST" class="formulario">
+        <div class="campo">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" name="name" id="nombre" placeholder="Ej: Maria Perez" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" name="email" id="email" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Tu Consulta:</label>
+            <textarea name="message" id="mensaje" rows="5" placeholder="Cuéntanos qué vestido te interesa..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+    </form>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto Vestidos - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
